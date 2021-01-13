@@ -28,7 +28,7 @@ STEP BY STEP TO USE:
 
 
 5 - List active topics
-  % rostopic list
+  $ rostopic list
 
 
 6 - Run rostopic to view what's being posted on ROS topics
