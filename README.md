@@ -15,8 +15,8 @@ STEP BY STEP TO USE:
     $ cd ~/catkin_ws/
     $ source devel/setup.bash
   
-  Open ROSCODE
-  $ ROSCORE
+  Open ROSCORE
+  $ roscore
 
 
 3 - Run this command to find out which of the serial ports the Arduino is connected to
