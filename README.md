@@ -21,9 +21,15 @@ STEP BY STEP TO USE:
 
 3 - Run this command to find out which of the serial ports the Arduino is connected to
   % ls /dev/ttyACM* (New terminal)
+  or
+  % ls /dev/ttyUSB*
 
 
 4 - Run the rosserial_python
+For example, when the Arduino is connected to port zero
+
+  $ rosrun rosserial_python serial_node.py /dev/ttyACM
+  or
   $ rosrun rosserial_python serial_node.py /dev/ttyUSB0
 
 
