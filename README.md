@@ -24,7 +24,7 @@ STEP BY STEP TO USE:
 
 
 4 - Run the rosserial_python
-  $ rosrun rosserial_python serial_node.py /dev/ttyUSB0
+  $ rosrun rosserial_python serial_node.py /dev/ttyACM0
 
 
 5 - List active topics
