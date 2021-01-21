@@ -26,15 +26,7 @@ STEP BY STEP TO USE:
 
 
 4 - Run the rosserial_python
-<<<<<<< HEAD
   $ rosrun rosserial_python serial_node.py /dev/ttyACM0
-=======
-For example, when the Arduino is connected to port zero
-
-  $ rosrun rosserial_python serial_node.py /dev/ttyACM
-  or
-  $ rosrun rosserial_python serial_node.py /dev/ttyUSB0
->>>>>>> 3eca368207e50e6f8a9d9f02cbf57493d5e7248c
 
 
 5 - List active topics
