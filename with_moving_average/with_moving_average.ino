@@ -15,7 +15,7 @@
 #define MAX_DISTANCE 600 // Max distance in cm.
 #define MIN_DISTANCE 20 // Min distance in cm
 #define FIELD_OF_VIEW 0.26 // field of view // 0.26 rad = 14.89 degree
-#define PING_INTERVAL 50 // Milliseconds between pings.
+#define PING_INTERVAL 100 // Milliseconds between pings.
 #define POINT_NUM 10 // Point numbers for moving mean
 
 
@@ -171,6 +171,7 @@ void echoCheck() { // If ping echo, set distance to array.
 
 void oneSensorCycle() { // Do something with the results.
 
+  /*
   //Update distance value to last valid read for each sensor
   for (uint8_t i = 0; i < SONAR_NUM; i++){
     cm[i] = returnLastValidRead(i, cm[i]);
@@ -181,16 +182,17 @@ void oneSensorCycle() { // Do something with the results.
   for (uint8_t i = 0; i < SONAR_NUM; i++){
     cm[i] = movingMean[i];
   }
+  */
 
 
   // Publish results in ROS topics
-  //publishInRosTopics();
+  publishInRosTopics();
   
   // Print in serial monitor
   //printInSerialMonitor();
   
   // Print in serial plot
-  printInSerialPlot();
+  //printInSerialPlot();
 }
 
 
