@@ -122,6 +122,7 @@ void doMeasurement()
 ****************************************************************/
 // The PIN register is used to read the digital value of the pin.
 // INTerrupt number 0 (pin 2 on Mega)
+
 void call_INT1()
 {
   byte pinRead;
@@ -130,6 +131,8 @@ void call_INT1()
   pinRead = PINE & B00010000;        // Faster ; Read pin 2/PE4
   interruptHandler(pinRead, 0);
 }
+
+
 // INTerrupt number 1 (pin 3 on Mega)
 void call_INT2()
 {
@@ -139,6 +142,8 @@ void call_INT2()
   pinRead = PINE & B00100000;    // Faster ; Read pin 3/PE5
   interruptHandler(pinRead, 1);
 }
+
+
 // INTerrupt number 2 (pin 18 on Mega)
 void call_INT3()
 {
@@ -148,6 +153,8 @@ void call_INT3()
   pinRead = PIND & B00001000;    // Faster ; Read pin 18/PD3
   interruptHandler(pinRead, 2);
 }
+
+
 // INTerrupt number 3 (pin 19 on Mega)
 void call_INT4()
 {
@@ -157,6 +164,8 @@ void call_INT4()
   pinRead = PIND & B00000100;    // Faster ; Read pin 19/PD2
   interruptHandler(pinRead, 3);
 }
+
+
 // INTerrupt number 4 (pin 20 on Mega)
 void call_INT5()
 {
@@ -166,6 +175,8 @@ void call_INT5()
   pinRead = PIND & B00000010;  // Faster ; Read pin 20/PD1
   interruptHandler(pinRead, 4);
 }
+
+
 // INTerrupt number 5 (pin 21 on Mega)
 void call_INT6()
 {
