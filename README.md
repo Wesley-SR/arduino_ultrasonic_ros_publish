@@ -5,7 +5,11 @@ Sources:
 1) https://www.intorobotics.com/how-to-use-sensor_msgs-range-ros-for-multiple-sensors-with-rosserial/
 2) https://github.com/surabhi96/Library-navigating-robot/wiki/Ultrasonic-sensor-with-ROS
 
-STEP BY STEP TO USE:
+
+------------------------------------------------------------------------------------------
+STEP BY STEP TO USE WITH ROS:
+------------------------------------------------------------------------------------------
+
 1 - Upload the code to your arduino
 
 
@@ -46,4 +50,21 @@ STEP BY STEP TO USE:
 8 - To convert rosbag to csv
   $ rosrun rosbag_to_csv rosbag_to_csv.py
 
+
+
+------------------------------------------------------------------------------------------
+PINS - COMMON TRIGGER
+------------------------------------------------------------------------------------------
+PINS TRIGGER
+Sensor 1, 2, 3, 4, 5 e 6 são ligados em comum ao pino 4 do Arduino
+
+
+PINS - ECHO SENSOR
+
+Sensor 1 (Placa) - Pin 02 (Arduino) - FE (Robô)
+Sensor 2 (Placa) - Pin 03 (Arduino) - FC (Robô)
+Sensor 3 (Placa) - Pin 18 (Arduino) - FD (Robô)
+Sensor 4 (Placa) - Pin 19 (Arduino) - TD (Robô)
+Sensor 5 (Placa) - Pin 20 (Arduino) - TC (Robô)
+Sensor 6 (Placa) - Pin 21 (Arduino) - TE (Robô)
 
