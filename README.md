@@ -34,7 +34,16 @@ STEP BY STEP TO USE:
 
 
 6 - Run rostopic to view what's being posted on ROS topics
-  % rostopic echo ultrasonic_1 (New terminal)
-  % rostopic echo ultrasonic_2 (New terminal)
-  % rostopic echo ultrasonic_3 (New terminal)
+  $ rostopic echo ultrasonic_1 (New terminal)
+  $ rostopic echo ultrasonic_2 (New terminal)
+  $ rostopic echo ultrasonic_3 (New terminal)
   ...
+  
+7 - To save datas in bagfile
+  $ cd rosbag ...
+  $ rosbag record -a
+ 
+8 - To convert rosbag to csv
+  $ rosrun rosbag_to_csv rosbag_to_csv.py
+
+
