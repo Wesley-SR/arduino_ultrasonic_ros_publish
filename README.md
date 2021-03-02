@@ -55,11 +55,12 @@ STEP BY STEP TO USE WITH ROS:
 ------------------------------------------------------------------------------------------
 PINS - COMMON TRIGGER
 ------------------------------------------------------------------------------------------
-PINS TRIGGER
-Sensor 1, 2, 3, 4, 5 e 6 são ligados em comum ao pino 4 do Arduino
+
+ --- TRIGGER PINS ---
+ - Sensor 1, 2, 3, 4, 5 e 6 são ligados em comum ao pino 4 do Arduino
 
 
-PINS - ECHO SENSOR
+ --- ECHO PINS ---
 
  - Sensor 1 (Placa) - Pin 02 (Arduino) - FE (Robô)
  - Sensor 2 (Placa) - Pin 03 (Arduino) - FC (Robô)
